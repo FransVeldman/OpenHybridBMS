@@ -62,3 +62,15 @@ Apart from managing the Lithium battery, OpenHybridBMS has the following feature
 - Overcurrent "soft fuse"
 
 Features are still being added, stay tuned.
+
+## Versions
+I anticipate two versions of this project:
+
+### DIY version
+To make this project suitable for DIY, only commonly available parts and breakout boards suitable for DIY projects are used. Unfortunately, this sets a few limits:
+- The BMS is only suitable for 12V systems due to limitations of the ADC and high side current sensors. Suitable parts for 24V are only available in SMD,  not on breakout boards.
+- Cell imbalance can be detected and reported, but not automatically corrected. Circuitry for automatic cell balancing would become quite complex for this DIY project and would add some unnessecary failure points. Experience from other builders has shown that in a healthy battery pack cell balancing is only benificial if performed no more frequent than once per year. If the BMS reports a cell imbalance the rebalancing can be performed manually if desired.
+
+### Readily built version
+I plan to produce a limited batch of the BMS which will be completely built and ready to be used. This version will use a few different components which allow the BMS to be used for 24V systems as well and will feature automatic cell balancing. If you are interested, please let me know.
+
