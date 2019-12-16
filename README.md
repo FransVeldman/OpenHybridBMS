@@ -35,7 +35,7 @@ Most of the time the batteries only need to provide power to get through the nig
 Electronics on sailing boats have to operate in harsh conditions and often fail due to corroded contacts, lightning strikes, metal fatigue because of the constant movement, etc. At the same time, failure is often not an option, especially during an ocean passage. A Lithium battery, despite its advantages, adds a significant failure point due to its dependancy on a BMS. A redundant simple fall back energy source is highly recommended.
 
 ### Hybrid solutions
-A [lithium/lead-acid hybrid](https://www.zwerfcat.nl/en/lithium-hydrid.html) installation is an installation where the lead-acid installation is left intact and the LiFePO4 battery is, via a bistable power relais, piggy backed onto the lead-acid batteries, and this solves all our problems:
+A [lithium/lead-acid hybrid](https://www.zwerfcat.nl/en/lithium-hybrid.html) installation is an installation where the lead-acid installation is left intact and the LiFePO4 battery is, via a bistable power relais, piggy backed onto the lead-acid batteries, and this solves all our problems:
 - The lead-acid batteries spend most of their time being fully charged and only have to cycle occasionally, which will extend their lifetime considerably.
 - The Lithium batteries only have to cover the day/night cycle so they are discharged deeply enough, which is good for their longevity.
 - Standard Lead-acid charge sources  will first charge the Lithium batteries (they charge with a lower voltage than the LA-batteries) and once the fully charged Lithium battery is taken off line, the chargers will still "see" the LA-battery which they are designed for, continue the lead-acid charge curve and top off the lead-acid batteries..
@@ -59,19 +59,19 @@ So, I decided to develop my own BMS. Which turned out to become much more comple
 ## Features
 For more information about each of the following features, click on the associated links
 
-- [Special design for lead-acid/LiFePO4 hybrid systems](https://www.zwerfcat.nl/en/open-hydrid-bms.html#hybrid)
-    - [No change necessary in existing installation](https://www.zwerfcat.nl/en/open-hydrid-bms.html#easy)
-    - [Full redundancy](https://www.zwerfcat.nl/en/open-hydrid-bms.html#redundancy)
-    - [Lead-acid bulk priority charging](https://www.zwerfcat.nl/en/open-hydrid-bms.html#laprio)
-    - [High side current sensing](https://www.zwerfcat.nl/en/open-hydrid-bms.html#hiside)
-- [Open source, others can verify the project and offer enhancements](https://www.zwerfcat.nl/en/open-hydrid-bms.html#open)
-- [Rebuildable for the homebuilder with commonly available parts and tools](https://www.zwerfcat.nl/en/open-hydrid-bms.html#basic)
-- [Optional pro-version, completely assembled, ready to be installed](https://www.zwerfcat.nl/en/open-hydrid-bms.html#pro)
+- [Special design for lead-acid/LiFePO4 hybrid systems](https://www.zwerfcat.nl/en/open-hybrid-bms.html#hybrid)
+    - [No change necessary in existing installation](https://www.zwerfcat.nl/en/open-hybrid-bms.html#easy)
+    - [Full redundancy](https://www.zwerfcat.nl/en/open-hybrid-bms.html#redundancy)
+    - [Lead-acid bulk priority charging](https://www.zwerfcat.nl/en/open-hybrid-bms.html#laprio)
+    - [High side current sensing](https://www.zwerfcat.nl/en/open-hybrid-bms.html#hiside)
+- [Open source, others can verify the project and offer enhancements](https://www.zwerfcat.nl/en/open-hybrid-bms.html#open)
+- [Rebuildable for the homebuilder with commonly available parts and tools](https://www.zwerfcat.nl/en/open-hybrid-bms.html#basic)
+- [Optional pro-version, completely assembled, ready to be installed](https://www.zwerfcat.nl/en/open-hybrid-bms.html#pro)
     - Extended voltage range, so it is also suitable for 24V systems
     - On board cell balancing
     - Higher voltage and current resolution
-- [Can control mono-stable relais and bi-stable (latching) relais](https://www.zwerfcat.nl/en/open-hydrid-bms.html#bistable)
-- [Many communication and reporting options](https://www.zwerfcat.nl/en/open-hydrid-bms.html#comm)
+- [Can control mono-stable relais and bi-stable (latching) relais](https://www.zwerfcat.nl/en/open-hybrid-bms.html#bistable)
+- [Many communication and reporting options](https://www.zwerfcat.nl/en/open-hybrid-bms.html#comm)
     - Tracking both Lithium and lead-acid State Of Charge, current, voltage and temperatures
     - Dedicated display to show dynamic system parameters
     - Ethernet port
@@ -79,21 +79,21 @@ For more information about each of the following features, click on the associat
     - Remote logging
     - Remote display
     - NMEA port
-- [Safety](https://www.zwerfcat.nl/en/open-hydrid-bms.html#safety)
-    - [Extensive voltage checking on cell level](https://www.zwerfcat.nl/en/open-hydrid-bms.html#volt)
-    - [Temperature sensors for each cell](https://www.zwerfcat.nl/en/open-hydrid-bms.html#temp)
-    - [Watchdog output](https://www.zwerfcat.nl/en/open-hydrid-bms.html#watchdog)
-    - [Softfuse to limit discharge current](https://www.zwerfcat.nl/en/open-hydrid-bms.html#dfuse)
-    - [Cable loss guard](https://www.zwerfcat.nl/en/open-hydrid-bms.html#loss)
-- [Lithium battery life extending features](https://www.zwerfcat.nl/en/open-hydrid-bms.html#longevity)
-    - [Trickle charge guarding](https://www.zwerfcat.nl/en/open-hydrid-bms.html#trickle)
-    - [User selectable partial charge targets](https://www.zwerfcat.nl/en/open-hydrid-bms.html#targets)
-    - [Charge current softfuse](https://www.zwerfcat.nl/en/open-hydrid-bms.html#cfuse)
+- [Safety](https://www.zwerfcat.nl/en/open-hybrid-bms.html#safety)
+    - [Extensive voltage checking on cell level](https://www.zwerfcat.nl/en/open-hybrid-bms.html#volt)
+    - [Temperature sensors for each cell](https://www.zwerfcat.nl/en/open-hybrid-bms.html#temp)
+    - [Watchdog output](https://www.zwerfcat.nl/en/open-hybrid-bms.html#watchdog)
+    - [Softfuse to limit discharge current](https://www.zwerfcat.nl/en/open-hybrid-bms.html#dfuse)
+    - [Cable loss guard](https://www.zwerfcat.nl/en/open-hybrid-bms.html#loss)
+- [Lithium battery life extending features](https://www.zwerfcat.nl/en/open-hybrid-bms.html#longevity)
+    - [Trickle charge guarding](https://www.zwerfcat.nl/en/open-hybrid-bms.html#trickle)
+    - [User selectable partial charge targets](https://www.zwerfcat.nl/en/open-hybrid-bms.html#targets)
+    - [Charge current softfuse](https://www.zwerfcat.nl/en/open-hybrid-bms.html#cfuse)
     - Protection against charging at too low temperatures
-- [Environmental control](https://www.zwerfcat.nl/en/open-hydrid-bms.html#environmental)
-    - [Battery heater control for charging in sub-zero temperatures](https://www.zwerfcat.nl/en/open-hydrid-bms.html#heater)
-    - [Two speed fan control for keeping the batteries cool in the tropics](https://www.zwerfcat.nl/en/open-hydrid-bms.html#fan)
-- [Automatic energy management](https://www.zwerfcat.nl/en/open-hydrid-bms.html#signals)
+- [Environmental control](https://www.zwerfcat.nl/en/open-hybrid-bms.html#environmental)
+    - [Battery heater control for charging in sub-zero temperatures](https://www.zwerfcat.nl/en/open-hybrid-bms.html#heater)
+    - [Two speed fan control for keeping the batteries cool in the tropics](https://www.zwerfcat.nl/en/open-hybrid-bms.html#fan)
+- [Automatic energy management](https://www.zwerfcat.nl/en/open-hybrid-bms.html#signals)
     - 8 output ports signalling various conditions which can be used to control external equipment
     - 7 of these ports are preprogrammed, 1 of these signal ports is fully user configurable
     - The output port signals are also transmitted via the Ethernet and other communication ports
